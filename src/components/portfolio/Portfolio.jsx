@@ -3,9 +3,6 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.png'
 import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio3.png'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
 
 const data = [
   {
@@ -33,26 +30,6 @@ const data = [
     github: 'https://github.com/elanastrijbis/Soundwave',
     demo: 'Demo placeholder 3'
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Placeholder 4',
-    demo: 'Demo placeholder 4'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Placeholder 5',
-    github: 'https://github.com/elanastrijbis',
-    demo: 'Demo placeholder 5'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Placeholder 6',
-    github: 'https://github.com/elanastrijbis',
-    demo: 'Demo placeholder 6'
-  }
 ]
 
 function Portfolio() {
