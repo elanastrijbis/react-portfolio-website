@@ -44,6 +44,7 @@
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
+  color: var(--color-primary);
 }
 
 .about__icon {
@@ -63,6 +64,11 @@
 
 .about__content p {
   margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+}
+
+.about__link {
+  text-decoration: none;
   color: var(--color-light);
 }
 

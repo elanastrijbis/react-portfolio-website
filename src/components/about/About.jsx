@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/elanacoffee.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
+import {AiOutlineLaptop} from 'react-icons/ai'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
 function About() {
@@ -22,22 +22,24 @@ function About() {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ years working</small>
+              <small>Graduate Developer</small>
             </article>
             <article className='about__card'>
-              <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>300+ clients worlwilde</small>
+              <AiOutlineLaptop className='about__icon'/>
+              <h5>Stack</h5>
+              <small>Fullstack</small>
             </article>
             <article className='about__card'>
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>
+                <a href="https://github.com/elanastrijibs" className='about__link'>Github</a>
+              </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi, tenetur error ex voluptatum dolorum magnam possimus perspiciatis odio. Obcaecati quibusdam ipsum minus voluptatum nesciunt modi reiciendis? Recusandae, minima explicabo.
+            Hi there! I am Elana! A year ago I decided to change careers into tech, I developed a keen interest in the industry while having time to reflect during lockdowns. Not long after I starting to code for fun in my spare time for a few months, I decided to enrol in an immersive full stack web development bootcamp at Le Wagon, which taught me technical skills as well as adapting quickly and easily to new learning environments. I'm inquisitive and eager to learn new things, and I love to code and problem solve. I am currently working as a full stack developer. I enjoy working in a supportive and engaging environment with passionate team mates, while building exciting and innovative products that work to solve a problem.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>
