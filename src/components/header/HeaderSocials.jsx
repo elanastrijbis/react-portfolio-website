@@ -1,14 +1,12 @@
 import React from 'react'
 import {BsLinkedin} from 'react-icons/bs'
 import {ImGithub} from 'react-icons/im'
-import {FiDribbble} from 'react-icons/fi'
 
 function HeaderSocials() {
   return (
     <div className='header__socials'>
-      <a href="https://linkedin.com"><BsLinkedin/></a>
-      <a href="https://github.com"><ImGithub /></a>
-      <a href="https://dribble.com"><FiDribbble /></a>
+      <a href="www.linkedin.com/in/elanastrijbis" target="_blank"><BsLinkedin/></a>
+      <a href="https://github.com/elanastrijbis" target="_blank"><ImGithub /></a>
     </div>
   )
 }
