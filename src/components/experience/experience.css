@@ -16,6 +16,7 @@
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
+  color: var(--color-primary);
 }
 
 .experience__container > div h3 {
