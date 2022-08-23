@@ -23,22 +23,22 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <a href="mailto:ehgestrijbis@gmail.com" target="_blank">
+            <a href="mailto:ehgestrijbis@gmail.com">
             < MdOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
             Send a message</a>
           </article>
           <article className="contact__option">
-            <a href="https://www.linkedin.com/in/elanastrijbis" target="_blank">
+            <a href="https://www.linkedin.com/in/elanastrijbis">
               < BsLinkedin className='contact__option-icon'/>
               <h4>Linked In</h4>
             Connect with me</a>
           </article>
           <article className="contact__option">
-            <a href="https://api.whatsapp.com/send?phone=+61401803312" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+61401803312">
               < BsWhatsapp className='contact__option-icon'/>
               <h4>Whatsapp</h4>
-            Send a message</a>
+          Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
