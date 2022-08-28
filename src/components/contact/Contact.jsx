@@ -5,6 +5,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import { useState } from 'react'
 
 const Contact = () => {
   const form = useRef();
@@ -16,24 +17,52 @@ const Contact = () => {
 
     e.target.reset()
   };
+
+  const isValidEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = event => {
+    if (!isValidEmail(event.target.value)) {
+      setError('Email is invalid');
+    } else {
+      setError(null);
+    }
+  }
+
+  const readyToSend = (name, message, email) => {
+    if (name && email && message === ""){
+      setButtonContent(false)
+    } else {
+      setButtonContent(true)
+    }
+  }
+
+  // const [name, setName] = useState('');
+  // const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
+  const [buttonContent, setButtonContent] = useState(false)
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
       <h2>Contact me</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
             <a href="mailto:ehgestrijbis@gmail.com">
+          <article className="contact__option">
             < MdOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
-            Send a message</a>
+            Send a message
           </article>
-          <article className="contact__option">
+            </a>
             <a href="https://www.linkedin.com/in/elanastrijbis">
+          <article className="contact__option">
               < BsLinkedin className='contact__option-icon'/>
               <h4>Linked In</h4>
-            Connect with me</a>
+              Connect with me
           </article>
+            </a>
           <article className="contact__option">
             <a href="https://api.whatsapp.com/send?phone=+61401803312">
               < BsWhatsapp className='contact__option-icon'/>
@@ -44,9 +73,10 @@ const Contact = () => {
         {/* END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name='email' placeholder='Your Email' required  />
-          <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+            {error && <h5 className='error'>{error}</h5>}
+          <input type="email" name='email' placeholder='Your Email' onChange={handleChange} required  />
+          <textarea name="message" rows="7" placeholder="Your Message"  required></textarea>
+          <button type='submit' onClick={readyToSend} className='btn btn-primary'>{buttonContent ? "Message Sent!" : "Send message"}</button>
         </form>
       </div>
     </section>

@@ -39,7 +39,7 @@ function About() {
           </div>
 
           <p>
-            Hi there! I am Elana! A year ago I decided to change careers into tech, I developed a keen interest in the industry while having time to reflect during lockdowns. Not long after I starting to code for fun in my spare time for a few months, I decided to enrol in an immersive full stack web development bootcamp at Le Wagon, which taught me technical skills as well as adapting quickly and easily to new learning environments. I'm inquisitive and eager to learn new things, and I love to code and problem solve. I am currently working as a full stack developer. I enjoy working in a supportive and engaging environment with passionate team mates, while building exciting and innovative products that work to solve a problem.
+            Hi there! I am Elana! A year ago I decided to change careers into tech, I developed a keen interest in the industry while having time to reflect during lockdowns. Not long after I started to code for fun in my spare time for a few months, I decided to enroll in an immersive full stack web development bootcamp at Le Wagon, which taught me to develop technical skills as well as adapting quickly and easily to new learning environments. I'm inquisitive and eager to learn new things, and I love to code and solve problems. I am currently working as a full stack developer. I enjoy working in a supportive and engaging environment with passionate team mates, while building exciting and innovative products that work to solve a problem.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>
