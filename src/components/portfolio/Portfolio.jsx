@@ -3,6 +3,7 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.png'
 import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio3.png'
+import IMG4 from '../../assets/portfolio4.png'
 
 const data = [
   {
@@ -30,6 +31,14 @@ const data = [
     github: 'https://github.com/elanastrijbis/Soundwave',
     demo: 'Demo placeholder 3'
   },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Breathe Guidance For Relaxation',
+    subtitle: 'JS | HTML | CSS',
+    github: 'https://github.com/elanastrijbis/breathing-guidance-relaxation',
+    demo: 'https://flourishing-crostata-f627a8.netlify.app/'
+  }
 ]
 
 function Portfolio() {
