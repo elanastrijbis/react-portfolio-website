@@ -22,7 +22,7 @@ function About() {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>Graduate Developer</small>
+              <small>Junior Software Engineer</small>
             </article>
             <article className='about__card'>
               <AiOutlineLaptop className='about__icon'/>

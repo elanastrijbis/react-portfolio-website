@@ -20,7 +20,7 @@ const data = [
     title: 'Space Out',
     subtitle: 'Ruby on Rails | Sass',
     github: 'https://github.com/elanastrijbis/Space-0ut',
-    demo: 'https://young-garden-06123.herokuapp.com/'
+    demo: 'https://spaceout-bookings.herokuapp.com/'
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const data = [
     subtitle: 'HTML | CSS',
 
     github: 'https://github.com/elanastrijbis/Soundwave',
-    demo: 'Demo placeholder 3'
+    demo: 'https://young-garden-06123.herokuapp.com/'
   },
   {
     id: 4,
